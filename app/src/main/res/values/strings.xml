@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SuperCloudMusicPlayerPP</string>
+    <string name="Login">Login</string>
+    <string name="enter_username">Username</string>
+    <string name="enter_password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="login">Please enter a username and password to login</string>
+    <string name="remember_me">Remember Me</string>
 </resources>
