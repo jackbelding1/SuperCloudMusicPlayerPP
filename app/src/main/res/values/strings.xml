@@ -6,4 +6,6 @@
     <string name="create_account">Create Account</string>
     <string name="login">Please enter a username and password to login</string>
     <string name="remember_me">Remember Me</string>
+    <string name="info">Info</string>
+    <string name="back">Back</string>
 </resources>

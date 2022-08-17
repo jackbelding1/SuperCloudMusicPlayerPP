@@ -2,15 +2,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:stretchColumns="1">
-    <TableRow>
-        <TextView
-            android:text="temp"
-            android:padding="3dip" />
-        <TextView
-            android:text="temp"
-            android:gravity="right"
-            android:padding="3dip" />
-    </TableRow>
 
     <TableRow>
         <TextView
@@ -20,5 +11,58 @@
             android:text="temp"
             android:gravity="right"
             android:padding="3dip" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="3dip"
+            android:text="temp" />
+
+        <TextView
+            android:gravity="right"
+            android:padding="3dip"
+            android:text="temp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/musicInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSongInfo"
+            android:text="@string/info" />
+
     </TableRow>
 </TableLayout>

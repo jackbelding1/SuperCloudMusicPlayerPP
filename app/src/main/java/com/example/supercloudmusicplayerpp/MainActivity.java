@@ -1,7 +1,10 @@
 package com.example.supercloudmusicplayerpp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,4 +25,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void onSongInfo(View view){
+        Intent intent = new Intent(this, MusicInfoActivity.class);
+        startActivity(intent);
+
+    }
 }
