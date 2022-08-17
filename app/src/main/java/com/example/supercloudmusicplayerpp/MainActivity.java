@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String current_username;
     private int userid;
+    private MusicPlayer musicplayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +24,18 @@ public class MainActivity extends AppCompatActivity {
             userid = shared.getInt("userid");
             current_username = shared.getString("current_username", "username error");
         }
+
+        // create Music player
+        musicplayer = new MusicPlayer(getApplicationContext());
     }
 
     public void onSongInfo(View view){
         Intent intent = new Intent(this, MusicInfoActivity.class);
         startActivity(intent);
 
+    }
+
+    public void onPlayAndPause(View view){
+        musicplayer.playMusic();
     }
 }

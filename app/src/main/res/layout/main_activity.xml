@@ -46,10 +46,11 @@
             android:text="Button" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/playAndPause"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:onClick="onPlayAndPause"
+            android:text="@string/playandpause" />
 
         <Button
             android:id="@+id/button5"
