@@ -9,4 +9,6 @@
     <string name="info">Info</string>
     <string name="back">Back</string>
     <string name="playandpause">Play/Pause</string>
+    <string name="donate">Donate</string>
+    <string name="record_info">Record Info</string>
 </resources>
