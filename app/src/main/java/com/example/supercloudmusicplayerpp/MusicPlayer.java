@@ -9,6 +9,7 @@ import java.util.List;
 public class MusicPlayer {
     private MediaPlayer mp;
     private ArrayList<Record> recordBox = new ArrayList<>();
+    private int currentRecord;
 
     // constructor
     public MusicPlayer(Context mainActivityContext){
@@ -19,7 +20,8 @@ public class MusicPlayer {
         // initialize the record box
         initializeRecordBox();
         // add the first record as default track
-        mp = MediaPlayer.create(mainActivityContext, recordBox.get(0).getResource());
+        currentRecord = 0;
+        mp = MediaPlayer.create(mainActivityContext, recordBox.get(currentRecord).getResource());
     }
 
     public void playMusic(){
@@ -29,5 +31,13 @@ public class MusicPlayer {
     private void initializeRecordBox(){
         Record record = new Record();
         recordBox.add(record);
+    }
+
+    public Record getCurrentRecord(){
+        return recordBox.get(currentRecord);
+    }
+
+    public String getTitleOf(int recordID){
+        return  recordBox.get(recordID).getTitle();
     }
 }

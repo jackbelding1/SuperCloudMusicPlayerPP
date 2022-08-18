@@ -4,34 +4,17 @@
     android:stretchColumns="1">
 
     <TableRow>
+
         <TextView
-            android:text="temp"
-            android:padding="3dip" />
-        <TextView
-            android:text="temp"
-            android:gravity="right"
-            android:padding="3dip" />
+            android:id="@+id/record1Title"
+            android:padding="3dip"
+            android:text="temp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/Record1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
-
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:padding="3dip"
-            android:text="temp" />
-
-        <TextView
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="temp" />
+            android:text="Select" />
 
     </TableRow>
 
