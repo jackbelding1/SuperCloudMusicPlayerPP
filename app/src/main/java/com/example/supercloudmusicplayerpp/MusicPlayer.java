@@ -30,6 +30,7 @@ public class MusicPlayer {
 
     private void initializeRecordBox(){
         Record record = new Record();
+        record.init();
         recordBox.add(record);
     }
 

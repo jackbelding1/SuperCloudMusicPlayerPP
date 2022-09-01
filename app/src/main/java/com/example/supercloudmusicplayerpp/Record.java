@@ -14,14 +14,17 @@ public class Record {
     private int resource;
     private Record.Paramenters params;
 
-    public Record(){
-        init();
-    }
 
-    private void init(){
+    public void init(){
+        //
+        // TODO: initialize from db
+        //
         params = new Record.Paramenters();
         resource = R.raw.track1;
         title = "Kill My Love";
+        artist = "Sam Divine ft. Amy Lyon";
+        label = "DVINE Sounds";
+        length = "5:41";
     }
 
     public int getResource(){
@@ -29,6 +32,9 @@ public class Record {
     }
 
     public String getTitle() { return title;}
+    public String getArtist() { return artist;}
+    public  String getLabel() {return label;}
+    public String getLength() {return length;}
 
     public static class Paramenters implements Serializable{
         private String title;
@@ -39,9 +45,9 @@ public class Record {
     }
 
     public void putToBundle(String key, Bundle bundle){
-//        params.artist = artist;
-//        params.label = label;
-//        params.length = length;
+        params.artist = artist;
+        params.label = label;
+        params.length = length;
 //        params.plays = plays;
         params.title = title;
         bundle.putSerializable(key, params);
@@ -49,8 +55,8 @@ public class Record {
     public void getFromBundle(String key, Bundle bundle){
         params = (Record.Paramenters) bundle.getSerializable(key);
         title = params.title;
-//        artist = params.artist;
-//        label = params.label;
-//        length = params.length;
+        artist = params.artist;
+        label = params.label;
+        length = params.length;
     }
 }

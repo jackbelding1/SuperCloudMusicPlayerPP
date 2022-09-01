@@ -28,5 +28,16 @@ public class MusicInfoActivity extends AppCompatActivity {
     private void init(Record record){
         TextView title = (TextView) findViewById(R.id.recordTitle);
         title.setText(record.getTitle());
+
+        TextView artist = (TextView) findViewById(R.id.recordArtist);
+        artist.setText(record.getArtist());
+
+        TextView label = (TextView) findViewById(R.id.recordLabel);
+        label.setText(record.getLabel());
+
+        TextView length = (TextView) findViewById(R.id.recordLength);
+        length.setText(record.getLength());
+
+
     }
 }

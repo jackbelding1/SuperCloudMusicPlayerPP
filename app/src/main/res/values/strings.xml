@@ -11,5 +11,8 @@
     <string name="playandpause">Play/Pause</string>
     <string name="donate">Donate</string>
     <string name="record_info">Record Info</string>
-    <string name="record_info_title">Title:</string>
+    <string name="record_info_title">Title: </string>
+    <string name="record_info_artist">Artist: </string>
+    <string name="record_info_Label">Label: </string>
+    <string name="record_info_length">Length: </string>
 </resources>
