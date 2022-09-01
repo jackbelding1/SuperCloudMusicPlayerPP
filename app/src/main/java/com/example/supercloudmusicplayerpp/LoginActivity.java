@@ -12,6 +12,9 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Objects;
 
@@ -38,11 +41,13 @@ public class LoginActivity extends AppCompatActivity {
         rememberMe = (CheckBox) findViewById(R.id.rememberCheckBox);
         user = (TextInputEditText) findViewById(R.id.userLogin);
         password = (TextInputEditText) findViewById(R.id.passLogin);
-
         sharedPref = this.getPreferences(Context.MODE_PRIVATE);
         user.setText(sharedPref.getString(USER_KEY, ""));
         password.setText(sharedPref.getString(PASS_KEY, ""));
         rememberMe.setChecked(sharedPref.getBoolean(CHECKED_KEY, false));
+        // Initialize Firebase Auth
+        FirebaseApp.initializeApp(this);
+
     }
 
     public void onLoginButton(View view) {
@@ -59,6 +64,12 @@ public class LoginActivity extends AppCompatActivity {
 
     public void startMain(int userid, String username) {
         Intent intent = new Intent(this, MainActivity.class);
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser == null){
+            return;
+        }
         intent.putExtra("userid", userid);
         intent.putExtra("current_username", username);
         startActivity(intent);

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1017147858379",
+    "project_id": "supercloudmusicplayerpp",
+    "storage_bucket": "supercloudmusicplayerpp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017147858379:android:51a58b622be492b3eb6a4e",
+        "android_client_info": {
+          "package_name": "com.example.supercloudmusicplayerpp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017147858379-ikr9kpj6dhevhb0amsckvvl35join3qn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2l8ZVutJHwoXsmltNz9AZfRNmuasgI7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017147858379-ikr9kpj6dhevhb0amsckvvl35join3qn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
