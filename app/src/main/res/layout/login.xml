@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/Login"
         android:layout_centerHorizontal="true"
+        android:onClick="onCreateAccountButton"
         android:text="@string/create_account"
         android:textColor="#0E0E0E"
         app:backgroundTint="#F4EFEF" />
